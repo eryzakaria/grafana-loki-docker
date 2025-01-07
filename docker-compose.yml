@@ -18,7 +18,7 @@ services:
     ports:
       - 3001:3001
     networks:
-      - app
+      - service
     logging: *default-logging
     restart: always
 
@@ -49,5 +49,5 @@ services:
     logging: *default-logging
 
 networks:
-  app:
+  service:
     name: service
